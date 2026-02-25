@@ -3,7 +3,7 @@ from fastapi import FastAPI, Request
 from redis import Redis
 from rq import Queue
 from fastapi.middleware.cors import CORSMiddleware
-
+from tasks import background_analysis_task
 app = FastAPI()
 
 
@@ -33,7 +33,7 @@ async def analyze_document(request: Request):
 
     # Hand off to the Koyeb worker via Upstash
     job = q.enqueue(
-        "tasks.background_analysis_task",
+        background_analysis_task,
         chat_id,
         file_id,
         data.get("user_id"),
