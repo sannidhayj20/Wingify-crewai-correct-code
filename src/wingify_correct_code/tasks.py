@@ -9,7 +9,7 @@ HASURA_ADMIN_SECRET = os.getenv("HASURA_ADMIN_SECRET")
 
 # CORRECT NHOST URL STRUCTURE (No extra .run in middle)
 # Subdomain.graphql.nhost.run for Hasura
-HASURA_URL = f"https://{NHOST_SUBDOMAIN}.graphql.nhost.run/v1/graphql"
+HASURA_URL = "https://afpyjlwmrdbhahnyndhl.hasura.ap-south-1.nhost.run/v1/graphql"
 # Subdomain.storage.nhost.run for Files
 STORAGE_URL = f"https://{NHOST_SUBDOMAIN}.storage.nhost.run/v1/files"
 
