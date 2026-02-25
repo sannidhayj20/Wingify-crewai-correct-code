@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+gunicorn
+requests
+python-dotenv
+redis
+rq
+crewai
+crewai[tools]
+langchain-openai
+pydantic
