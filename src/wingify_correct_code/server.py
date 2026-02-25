@@ -41,4 +41,4 @@ async def analyze_document(request: Request):
     )
 
     print(f"SUCCESS: Job {job.id} pushed to Upstash (Mumbai).")
-    return {"status": "queued", "job_id": job.get_id()}
+    return {"status": "queued", "job_id": job.id}
