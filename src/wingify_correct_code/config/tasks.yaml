@@ -1,0 +1,40 @@
+analyze_financial_document:
+  description: >
+    Analyze the provided financial document {file_path} to address the user's query: {query}. 
+    Focus on extracting concrete data points and providing a professional analysis. 
+    Do not use your imagination or make up recommendations; base everything on 
+    the actual financial figures found in the report.
+  expected_output: >
+    A structured financial analysis report that includes key performance metrics 
+    and data-backed insights relevant to the user's query.
+  agent: financial_analyst
+
+investment_analysis:
+  description: >
+    Evaluate the financial data to identify legitimate investment opportunities. 
+    Focus on actual financial ratios and their implications for long-term growth 
+    or stability. Ensure your recommendations are directly linked to the 
+    findings in the report and specifically address {query}.
+  expected_output: >
+    A list of professional investment strategies and product recommendations 
+    supported by verified financial data and market analysis.
+  agent: financial_analyst
+
+risk_assessment:
+  description: >
+    Identify potential market, credit, and operational risks within the provided 
+    financial document. Avoid dramatic scenarios; instead, provide a balanced 
+    and realistic view of volatility and risk factors based on industry 
+    standards and the document's content.
+  expected_output: >
+    A comprehensive risk assessment profile including potential downsides 
+    and suggested mitigation strategies grounded in actual financial concepts.
+  agent: financial_analyst
+
+verification:
+  description: >
+    Analyze the provided document at {file_path}. Confirm if this is a legitimate 
+    financial document and if its related to {query}(e.g., balance sheet, earnings report, etc.).
+  expected_output: >
+    A JSON object containing 'is_financial_doc' (boolean) and 'reason' (string).
+  agent: verifier

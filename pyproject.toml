@@ -1,0 +1,24 @@
+[project]
+name = "wingify_correct_code"
+version = "0.1.0"
+description = "wingify_correct_code using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.95.0,<1.0.0",
+    "pypdf>=6.7.3",
+]
+
+[project.scripts]
+wingify_correct_code = "wingify_correct_code.main:run"
+run_crew = "wingify_correct_code.main:run"
+train = "wingify_correct_code.main:train"
+replay = "wingify_correct_code.main:replay"
+test = "wingify_correct_code.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
