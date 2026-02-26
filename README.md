@@ -1,6 +1,6 @@
 # Financial Document Analyzer
 ### AI-Powered CrewAI Debug Assignment — Complete Solution
-**Submitted by:** Sannidhay Jangam | Wingify / VWO AI Internship 2025
+**Submitted by:** Sannidhay Jangam | Wingify / VWO AI Internship 2026
 
 ---
 
@@ -307,4 +307,4 @@ Analyzes a financial PDF through the multi-agent CrewAI pipeline.
 
 ---
 
-*Submitted for Wingify / VWO AI Internship Assignment — 2025*
+*Submitted for Wingify / VWO AI Internship Assignment — 2026*
